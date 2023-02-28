@@ -4,13 +4,9 @@ import org.testng.annotations.Test;
 
 public class QualitydemyPage  {
 
-    //  Hocam findBy notasyonu gelmiyor.  hatayı bulamadım
+    //  Hocam findBy notasyonu gelmiyor.  hatayı da bulamadım
 
-    public static void main(String[] args) {
 
-        System.out.println("hello");
-
-    }
 
 
 
