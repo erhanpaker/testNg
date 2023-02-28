@@ -10,5 +10,9 @@ public class ilkTest {
     public void test1(){
 
         Driver.getDriver().get("https://qualitydemy.com/");
+
+        Driver.closeDriver();
     }
+
+
 }
