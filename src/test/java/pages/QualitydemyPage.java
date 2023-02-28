@@ -6,7 +6,11 @@ public class QualitydemyPage  {
 
     //  Hocam findBy notasyonu gelmiyor.  hatayı bulamadım
 
-    @findBY
+    public static void main(String[] args) {
+
+        System.out.println("hello");
+
+    }
 
 
 
