@@ -4,14 +4,6 @@ import org.testng.annotations.Test;
 
 public class QualitydemyPage  {
 
-    // test ng dersleridkskadkasdladl
-    /lekfokdfodakfldşdf
-    mfdlkfdf
-
-
-
-
-
 
 
 
