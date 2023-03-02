@@ -15,6 +15,12 @@ public class ilkTest {
         QualitydemyPage qualitydemyPage = new QualitydemyPage();
         qualitydemyPage.ilkLoginLinki.click();
 
+        // doğru kullanıc adı ve şifre ile giriş yapın
+
+        qualitydemyPage.emailKutusu.sendKeys("anevzatcelik@gmail.com");
+        qualitydemyPage.passwordKutusu.sendKeys("Nevzat152032");
+        qualitydemyPage.loginButonu.click();
+
         Driver.closeDriver();
     }
 
