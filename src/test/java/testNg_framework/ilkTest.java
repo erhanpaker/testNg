@@ -24,7 +24,7 @@ public class ilkTest {
 
         // giriş yapıldığını test edin kodum
         Assert.assertTrue(qualitydemyPage.basariliGiris.isDisplayed());
-
+  // merhabasbjasjsnKAnkans
        Thread.sleep(5000);
 
         Driver.closeDriver();
