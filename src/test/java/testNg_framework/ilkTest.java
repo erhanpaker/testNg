@@ -21,6 +21,8 @@ public class ilkTest {
         qualitydemyPage.passwordKutusu.sendKeys("Nevzat152032");
         qualitydemyPage.loginButonu.click();
 
+        // erhan
+
         Driver.closeDriver();
     }
 
