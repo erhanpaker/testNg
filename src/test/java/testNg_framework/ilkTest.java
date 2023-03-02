@@ -1,5 +1,6 @@
 package testNg_framework;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.QualitydemyPage;
 import utilities.Driver;
@@ -8,7 +9,7 @@ public class ilkTest {
 
     @Test
 
-    public void test1(){
+    public void test1() throws InterruptedException {
 
         Driver.getDriver().get("https://qualitydemy.com/");
 
@@ -21,7 +22,10 @@ public class ilkTest {
         qualitydemyPage.passwordKutusu.sendKeys("Nevzat152032");
         qualitydemyPage.loginButonu.click();
 
-        // erhan YENİ Yazılan kodlar
+        // giriş yapıldığını test edin kodu
+        Assert.assertTrue(qualitydemyPage.basariliGiris.isDisplayed());
+
+       Thread.sleep(5000);
 
         Driver.closeDriver();
     }
