@@ -22,7 +22,7 @@ public class ilkTest {
         qualitydemyPage.passwordKutusu.sendKeys("Nevzat152032");
         qualitydemyPage.loginButonu.click();
 
-        // giriş yapıldığını test edin kodu
+        // giriş yapıldığını test edin kodum
         Assert.assertTrue(qualitydemyPage.basariliGiris.isDisplayed());
 
        Thread.sleep(5000);
