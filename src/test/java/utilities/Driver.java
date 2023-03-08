@@ -27,4 +27,6 @@ public class Driver {
     public static void closeDriver(){
         driver.close();
     }
+
+    // 12 video 2 saat
 }
