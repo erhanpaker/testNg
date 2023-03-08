@@ -29,4 +29,8 @@ public class Driver {
     }
 
     // 12 video 2 saat
+
+    public static void main(String[] args) {
+        System.out.println("hithup hatasının çözümü");
+    }
 }
