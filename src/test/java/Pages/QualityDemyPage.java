@@ -1,14 +1,15 @@
-package pages;
+package Pages;
 
+import Utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Test;
-import utilities.Driver;
 
-public class QualitydemyPage  {
+public class QualityDemyPage {
 
-    public QualitydemyPage() {
+    // page classları ve locateler bu class da olucak
+
+    public QualityDemyPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
@@ -26,14 +27,6 @@ public class QualitydemyPage  {
 
     @FindBy(linkText = "My courses")
     public WebElement basariliGiris;
-
-
-
-
-
-
-
-
 
 
 }

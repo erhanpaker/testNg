@@ -1,4 +1,4 @@
- package utilities;
+package Utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -13,9 +13,9 @@ public class Driver {
     public static WebDriver getDriver(){
 
         WebDriverManager.chromedriver().setup();
-        if (driver == null){
-            driver= new ChromeDriver();
 
+        if (driver == null){
+            driver = new ChromeDriver();
         }
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -24,13 +24,7 @@ public class Driver {
         return driver;
     }
 
-    public static void closeDriver(){
+    public void closeDriver(){
         driver.close();
-    }
-
-    // 12 video 2 saat
-
-    public static void main(String[] args) {
-        System.out.println("hithup hatasının çözümü");
     }
 }
