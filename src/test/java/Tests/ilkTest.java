@@ -1,7 +1,8 @@
 package Tests;
 
 import Pages.QualityDemyPage;
-import Utilities.Driver;
+import utilities.ConfigReader;
+import utilities.Driver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,7 +12,7 @@ public class ilkTest {
 
     public void test01(){
 
-        Driver.getDriver().get("https://qualitydemy.com/");
+        Driver.getDriver().get(ConfigReader.getProperty("url"));
 
         QualityDemyPage qualityDemyPage = new QualityDemyPage();
         qualityDemyPage.ilkLoginLinki.click();
@@ -26,7 +27,6 @@ public class ilkTest {
 
 
 
-
-
+     // 12 video 45 dk
     }
 }

@@ -1,7 +1,7 @@
 package Tests;
 
 import Pages.AmazonPage;
-import Utilities.Driver;
+import utilities.Driver;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -18,22 +18,23 @@ public class SoftAssertion {
         String actualUrl = Driver.getDriver().getCurrentUrl();
 
         SoftAssert softAssert = new  SoftAssert();
-        softAssert.assertTrue(actualUrl.contains(expectedIcerik));
+        softAssert.assertTrue(actualUrl.contains(expectedIcerik),"1 verify çalışmıyor");
 
 
         AmazonPage amazonPage = new AmazonPage();
-        softAssert.assertTrue(amazonPage.aramaKutusuElementi.isEnabled());
+        softAssert.assertTrue(amazonPage.aramaKutusuElementi.isEnabled(),"2 verify çalışmıyor");
 
-        amazonPage.aramaKutusuElementi.sendKeys("Nutella" + Keys.ENTER);
+        amazonPage.aramaKutusuElementi.sendKeys("nutella" + Keys.ENTER);
 
         expectedIcerik = "Nutella";
         String actualSonucYazısi = amazonPage.aramaSonucYazıElementi.getText();
 
-        softAssert.assertTrue(actualSonucYazısi.contains(expectedIcerik));
+        softAssert.assertTrue(actualSonucYazısi.contains(expectedIcerik),"3 verify çalışmıyor");
 
         softAssert.assertAll();
 
-        // 12 video 45 dk
+
+
 
     }
 }
