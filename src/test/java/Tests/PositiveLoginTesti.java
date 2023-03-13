@@ -32,6 +32,6 @@ public class PositiveLoginTesti {
 
         Thread.sleep(5000);
 
-        // 12 video 1 saat 30 dk
+        // 12 video 2 saat 19 dk
     }
 }

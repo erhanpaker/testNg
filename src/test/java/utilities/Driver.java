@@ -15,6 +15,8 @@ public class Driver {
     static ChromeOptions ops = new ChromeOptions();
 
     public static WebDriver getDriver() {
+
+        String browser = ConfigReader.getProperty("browser");
         if (driver == null) {
             switch (ConfigReader.getProperty("browser")) {
                 case "chrome":
