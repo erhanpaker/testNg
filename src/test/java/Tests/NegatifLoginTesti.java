@@ -6,32 +6,25 @@ import org.testng.annotations.Test;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class PositiveLoginTesti {
-
-    //bir test meetodu oluşturun
+public class NegatifLoginTesti {
 
     @Test
 
-    public void test01() throws InterruptedException {
+    public void test01(){
 
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
 
         QualityDemyPage qualityDemyPage = new QualityDemyPage();
         qualityDemyPage.cookiesKabulButonu.click();
 
-
-
-
         qualityDemyPage.ilkLoginLinki.click();
         qualityDemyPage.emailKutusu.sendKeys(ConfigReader.getProperty("qdGecerliUsername"));
+        qualityDemyPage.passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecersizPassword"));
 
-        qualityDemyPage.passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecerliPassword"));
         qualityDemyPage.loginButonu.click();
 
-        Assert.assertTrue(qualityDemyPage.basariliGiris.isEnabled());
+        Assert.assertTrue(qualityDemyPage.emailKutusu.isEnabled());
 
-        Thread.sleep(5000);
 
-        // 12 video 1 saat 30 dk
     }
 }
