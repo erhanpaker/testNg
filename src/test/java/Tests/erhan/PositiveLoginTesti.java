@@ -1,4 +1,4 @@
-package Tests;
+package Tests.erhan;
 
 import Pages.QualityDemyPage;
 import org.testng.Assert;
@@ -32,6 +32,6 @@ public class PositiveLoginTesti {
 
         Thread.sleep(5000);
 
-        // 12 video 2 saat 19 dk
+
     }
 }

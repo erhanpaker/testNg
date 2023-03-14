@@ -1,4 +1,4 @@
-package Tests;
+package Tests.NgFramework;
 
 import Pages.QualityDemyPage;
 import utilities.ConfigReader;
@@ -27,6 +27,6 @@ public class ilkTest {
 
 
 
-     // 12 video 45 dk
+
     }
 }

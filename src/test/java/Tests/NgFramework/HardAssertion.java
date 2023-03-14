@@ -1,4 +1,4 @@
-package Tests;
+package Tests.NgFramework;
 
 import Pages.AmazonPage;
 import utilities.Driver;
